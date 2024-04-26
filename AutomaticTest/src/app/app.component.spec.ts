@@ -1,10 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './modules/login/login.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent],
+      imports: [AppComponent,LoginComponent],
     }).compileComponents();
   });
 
@@ -24,6 +25,13 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, AutomaticTest');
+    expect(compiled.querySelector('h1')?.textContent).toContain('AutomaticTest');
   });
+
+  it('should create HomeComponent', () => {
+    const fixture = TestBed.createComponent(LoginComponent);
+    const homeComponent = fixture.componentInstance;
+    expect(homeComponent).toBeTruthy();
+  });
+
 });

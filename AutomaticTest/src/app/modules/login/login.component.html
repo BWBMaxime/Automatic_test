@@ -1,0 +1,14 @@
+<div class="content">
+    <div class="login-container">
+        <h1>Login</h1>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" name="username" required  [(ngModel)]="username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" required [(ngModel)]="password">
+        </div>
+        <button (click)="login()">Login</button>
+    </div>
+</div>
