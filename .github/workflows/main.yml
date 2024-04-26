@@ -27,4 +27,4 @@ jobs:
       working-directory: ./AutomaticTest
 
     - name: Display test results
-      run: cat test-results.txt  # Supposons que vos tests écrivent leurs résultats dans un fichier test-results.txt
+      run: cat test-results.txt 
