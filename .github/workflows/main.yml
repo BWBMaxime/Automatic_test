@@ -23,7 +23,7 @@ jobs:
       working-directory: ./AutomaticTest
 
     - name: Run unit tests
-      run: npm test
+      run: ng test
       working-directory: ./AutomaticTest
 
     - name: Display test results
