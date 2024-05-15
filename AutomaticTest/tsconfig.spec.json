@@ -5,10 +5,7 @@
     "types": ["jasmine"]
   },
   "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
+    "**/*.spec.ts",
+    "**/*.cy.ts"
   ],
-  "exclude": [
-    "**/*.spec.ts"
-  ]
 }
