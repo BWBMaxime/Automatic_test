@@ -23,8 +23,8 @@ jobs:
       working-directory: ./AutomaticTest
 
     - name: Install dependencies Angular Cli
-        run: npm install -g @angular/cli
-        working-directory: ./AutomaticTest
+      run: npm install -g @angular/cli
+      working-directory: ./AutomaticTest
   
     - name: Run unit tests
       run: ng test
